@@ -1,0 +1,24 @@
+.stars {
+    display: inline-block;
+  }
+
+  .star {
+    font-size: 1.5em;
+    color: #FFCE00;
+    margin-right: 5px;
+  }
+
+  .star.full:before {
+    content: "\2605";
+  }
+
+  .star.half:before {
+    content: "\2605";
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .star.empty:before {
+    content: "\2606";
+  }
